@@ -1,0 +1,41 @@
+
+.caixa {
+    background-color: #ffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.caixa h2,
+.caixa h3 {
+    color: #ad416b;
+}
+
+.foto {
+    margin: 20px;
+    border: 4px solid transparent;
+}
+
+.foto:hover {
+    border: 4px solid #d81b60;
+}
+
+iframe {
+    max-width: 100%;
+    border: 0;
+}
+
+.voltar {
+    text-align: center;
+    margin: 30px;
+}
+
+.voltar a {
+    color: #c2185b;
+    text-decoration: none;
+}
+
+.voltar a:hover {
+    color: #880e4f;
+    text-decoration: underline;
+}

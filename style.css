@@ -1,0 +1,36 @@
+
+.apresentacao {
+    background-color: #fff5f8;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.caixa {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.caixa h2 {
+    color: #ad416b;
+}
+
+.caixa a {
+    color: #c2185b;
+}
+
+.caixa a:hover {
+    color: #880e4f;
+    text-decoration: underline;
+}
+
+.foto {
+    margin: 20px;
+    border: 4px solid transparent;
+}
+
+.foto:hover {
+    border: 4px solid #d81b60;
+}
