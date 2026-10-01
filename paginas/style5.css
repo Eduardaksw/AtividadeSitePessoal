@@ -1,0 +1,328 @@
+/* FUNDO DA PÁGINA */
+
+body {
+    background-color: #fde7ef;
+}
+
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    background-color: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+.texto-apresentacao {
+    flex: 1;
+}
+
+.texto-apresentacao h2 {
+    color: #ad416b;
+}
+
+.texto-apresentacao p {
+    line-height: 1.6;
+}
+
+.imagem-apresentacao {
+    flex: 1;
+}
+
+
+/* IMAGEM DO PLANNER */
+
+.imagem-apresentacao img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+
+    border: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+.imagem-apresentacao img:hover {
+    border: 3px solid #7b1e4f;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+
+    background-color: #fde7ef;
+    color: #7b1e4f;
+
+    border: 3px solid #7b1e4f;
+
+    padding: 10px 18px;
+    margin-top: 10px;
+
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #d81b60;
+    color: white;
+    border: 3px solid #7b1e4f;
+}
+
+
+/* BENEFÍCIOS */
+
+.beneficios {
+    background-color: white;
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+.beneficios h2 {
+    color: #ad416b;
+}
+
+.lista-beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beneficio {
+    flex: 1;
+
+    background-color: #fde7ef;
+
+    padding: 20px;
+
+    border: 3px solid transparent;
+
+    box-sizing: border-box;
+}
+
+.beneficio:hover {
+    border: 3px solid #7b1e4f;
+}
+
+.beneficio h3 {
+    color: #ad416b;
+}
+
+.beneficio p {
+    line-height: 1.5;
+}
+
+
+/* SOBRE O PRODUTO */
+
+.sobre-produto {
+    background-color: white;
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+.sobre-produto > div {
+    flex: 1;
+}
+
+.sobre-produto h2,
+.sobre-produto h3 {
+    color: #ad416b;
+}
+
+.sobre-produto p {
+    line-height: 1.6;
+}
+
+.sobre-produto li {
+    margin: 10px 0;
+}
+
+
+/* OFERTA PARA COMPUTADOR */
+
+.oferta-desktop {
+    display: none;
+}
+
+
+/* OFERTA PARA CELULAR */
+
+.oferta-mobile {
+    display: block;
+
+    background-color: white;
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.oferta-mobile h2 {
+    color: #d81b60;
+}
+
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+    background-color: white;
+
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+.depoimentos h2 {
+    color: #ad416b;
+}
+
+.lista-depoimentos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.depoimento {
+    flex: 1;
+
+    background-color: #fde7ef;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.depoimento p {
+    line-height: 1.5;
+}
+
+
+/* VOLTAR */
+
+.voltar {
+    text-align: center;
+    margin: 30px;
+}
+
+.voltar a {
+    color: #c2185b;
+    text-decoration: none;
+}
+
+.voltar a:hover {
+    color: #880e4f;
+    text-decoration: underline;
+}
+
+
+/* TELAS MAIORES */
+
+@media (min-width: 600px) {
+
+    .apresentacao {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .lista-beneficios {
+        flex-direction: row;
+    }
+
+    .sobre-produto {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .oferta-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        background-color: white;
+
+        width: 90%;
+        max-width: 1000px;
+
+        margin: 30px auto;
+        padding: 30px;
+
+        box-sizing: border-box;
+    }
+
+    .conteudo-oferta {
+        flex: 1;
+    }
+
+    .conteudo-oferta h2 {
+        color: #ad416b;
+    }
+
+    .conteudo-oferta p {
+        line-height: 1.6;
+    }
+
+    .preco {
+        text-align: center;
+        min-width: 220px;
+    }
+
+    .preco h2 {
+        color: #d81b60;
+        font-size: 32px;
+    }
+
+    .oferta-mobile {
+        display: none;
+    }
+
+    .lista-depoimentos {
+        flex-direction: row;
+    }
+
+    .imagem-apresentacao img {
+        max-width: 400px;
+    }
+}
